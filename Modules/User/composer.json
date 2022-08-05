@@ -1,0 +1,23 @@
+{
+    "name": "firefoxuz/user",
+    "description": "",
+    "authors": [
+        {
+            "name": "Sultonov Daler",
+            "email": "daler.sultonov.00@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\User\\": ""
+        }
+    }
+}

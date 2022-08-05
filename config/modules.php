@@ -215,10 +215,10 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'nwidart',
+        'vendor' => 'firefoxuz',
         'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
+            'name' => 'Sultonov Daler',
+            'email' => 'daler.sultonov.00@gmail.com',
         ],
         'composer-output' => false,
     ],

@@ -3,6 +3,7 @@
 namespace Modules\User\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Modules\User\Actions\DestroyUserAction;
 use Modules\User\Actions\StoreUserAction;
@@ -35,7 +36,7 @@ class UserController extends Controller
      */
     public function store(StoreUserRequest $request, StoreUserAction $action)
     {
-        return response()->json($action->store($request));
+        return response()->json($action->store($request),Response::HTTP_CREATED);
     }
 
 

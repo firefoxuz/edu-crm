@@ -3,6 +3,7 @@
 namespace Modules\Subject\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Modules\Subject\Actions\DestroySubjectAction;
 use Modules\Subject\Actions\StoreSubjectAction;
@@ -34,7 +35,7 @@ class SubjectController extends Controller
      */
     public function store(StoreSubjectRequest $request, StoreSubjectAction $action)
     {
-        return response()->json($action->store($request));
+        return response()->json($action->store($request), Response::HTTP_CREATED);
     }
 
     /**

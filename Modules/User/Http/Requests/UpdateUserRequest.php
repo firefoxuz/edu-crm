@@ -10,10 +10,10 @@ class UpdateUserRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'full_name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'role' => 'required|in:' . implode(',', UserRoleEnum::toValues()),
-            'password' => 'required|string|min:6',
+            'full_name' => 'string|max:255',
+            'email' => 'string|email|max:255|unique:users',
+            'role' => 'in:' . implode(',', UserRoleEnum::toValues()),
+            'password' => 'string|min:6',
         ];
     }
 
